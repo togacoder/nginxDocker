@@ -11,6 +11,13 @@ ENV PASSWD passwd
 RUN yum -y update && \
     yum clean all && \
     yum install -y sudo \
+    epel-release \
+    php \
+    php-devel \
+    php-mbstring \
+    php-mycrypt \
+    php-pdo \
+    php-xml \
     vim \
     yum clean all
 
